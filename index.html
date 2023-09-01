@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OA-OpenStreetMap Custom Web Element</title>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src="js/oa-openstreetmap.js" defer></script>
+	<style>
+		.myMap {
+			height: 500px;
+			background-color: #ccc;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>OpenStreetMap Web Element</h1>
+
+	<oa-openstreetmap map-id="firstMap" class="myMap" latitude="-11.519417" longitude="-75.900706"></oa-openstreetmap>
+
+	<br>
+
+	<oa-openstreetmap map-id="secondMap" class="myMap" latitude="51.5" longitude="-0.09" marker-color="#555">
+		<h1>My custom popup content!</h1>
+		<p>Hello there Michigan</p>
+	</oa-openstreetmap>
+
+	<br>
+
+	<oa-openstreetmap map-id="thirdMap" class="myMap" latitude="32.161953" longitude="-110.868079" marker-color="#f0f">
+		<iframe width="280" height="157.5" src="https://www.youtube.com/embed/sitXeGjm4Mc" title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen></iframe>
+	</oa-openstreetmap>
+
+
+
+</body>
+
+</html>
